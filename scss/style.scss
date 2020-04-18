@@ -1,2 +1,103 @@
 @import 'normalize.scss';
 
+// === Veriables ===
+$roboto: 'Roboto', sans-serif;
+
+$hammersmith: 'Hammersmith One', sans-serif;
+
+$playfair: 'Playfair Display', serif;
+// === / Veriables ===
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.header {
+    color: #fff;
+    background: url(../img/header-background.png) no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    &-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        &__logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: #179aa3;
+            width: 128px;
+            height: 50px;
+            &-text{
+                font-family: $roboto;
+                font-size: 30px;
+                font-weight: 100;
+            }
+        }
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+            width: 526px;
+            &-link{
+                text-decoration: none;
+                color: #fff;
+                font-size: 13px;
+                font-family: $roboto;
+                font-weight: 900;
+                &:hover{
+                    color: #179aa3;
+                }
+            }
+        }
+    }
+    &-promo {
+        width: 770px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            font-family: $playfair;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+            margin-top: 160px;
+            position: relative;
+            &:after{
+                position: absolute;
+                content: '';
+                border: 1px solid #09c0bb;
+                width: 50px;
+                top: 60px;
+                right: 215px;
+            }
+        }
+        &__subtitle{
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.7px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        &__button{
+            display: inline;
+            font-family: $hammersmith;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #09c0bb;
+            border: 1px solid #09c0bb;
+            border-radius: 1px;
+            padding: 10px 15px 10px 15px;
+        }
+    }
+}

@@ -248,3 +248,89 @@ $black-color: #413d4b;
         }
     }
 }
+
+.team{
+    background: url(/img/team-background.png) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 60px 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    &-top{
+        &__title{
+            font-family: $playfair;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        &__subtitle{
+            font-family: $playfair;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.05px;
+            color: #f9f9f9;
+            text-align: center;
+            margin-bottom: 65px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: ' ';
+                border: 1px solid #fff;
+                width: 50px;
+                color: #fff;
+                top: 35px;
+                right: 47%;
+            }
+        }
+    }
+    &-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #e1e1e1;
+            &-image img{
+                width: 220px;
+                height: auto;
+            }
+            &-name{
+                font-family: $roboto;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.7px;
+                color: #fff;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            &-post{
+                font-family: $roboto;
+                font-size: 13px;
+                font-weight: 300;
+                color: #fafafa;
+                padding-bottom: 25px;
+            }
+        }
+    }
+    &-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        &__title{
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.7px;
+            color: #f3f3f3;
+            padding-bottom: 25px;
+        }
+        &__button{
+            @extend %blue-button;
+        }
+    }
+}

@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.header-promo__button, .story-wraper__description-button a {
+.header-promo__button, .story-wraper__description-button a, .team-footer__button {
   display: inline-block;
   font-family: "Hammersmith One", sans-serif;
   font-size: 16px;
@@ -662,5 +662,122 @@ template {
   letter-spacing: 0.7px;
   line-height: 22px;
   text-align: center;
+}
+
+.team {
+  background: url(/img/team-background.png) no-repeat 50% 50%;
+  background-size: cover;
+  padding: 60px 0px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-top__title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.team-top__subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.05px;
+  color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.team-top__subtitle::after {
+  position: absolute;
+  content: ' ';
+  border: 1px solid #fff;
+  width: 50px;
+  color: #fff;
+  top: 35px;
+  right: 47%;
+}
+
+.team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e1e1e1;
+}
+
+.team-content__item-image img {
+  width: 220px;
+  height: auto;
+}
+
+.team-content__item-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.team-content__item-post {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fafafa;
+  padding-bottom: 25px;
+}
+
+.team-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+}
+
+.team-footer__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  color: #f3f3f3;
+  padding-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */

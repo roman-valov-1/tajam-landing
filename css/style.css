@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.header-promo__button, .story-wraper__description-button a, .team-footer__button {
+.header-promo__button, .story-wraper__description-button a, .team-footer__button a, .works-button a {
   display: inline-block;
   font-family: "Hammersmith One", sans-serif;
   font-size: 16px;
@@ -428,6 +428,8 @@ template {
 
 .header-menu__nav-link:hover {
   color: #09c0bb;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header-promo {
@@ -458,6 +460,7 @@ template {
   position: absolute;
   content: '';
   border: 1px solid #09c0bb;
+  color: #09c0bb;
   width: 50px;
   top: 60px;
   right: 215px;
@@ -520,7 +523,7 @@ template {
 .video {
   background: url(../img/video-image.png) no-repeat 50% 50%;
   background-size: cover;
-  padding: 200px;
+  padding: 200px 0px;
   color: #fff;
 }
 
@@ -779,5 +782,89 @@ template {
   letter-spacing: 0.7px;
   color: #f3f3f3;
   padding-bottom: 25px;
+}
+
+.works {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.works-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 70px;
+}
+
+.works-top__title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  color: #413d4b;
+}
+
+.works-top__link {
+  position: relative;
+}
+
+.works-top__link a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #413d4b;
+  letter-spacing: 0.7px;
+}
+
+.works-top__link a:hover {
+  color: #09c0bb;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.works-top__link img {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+}
+
+.works-content {
+  height: 300px;
+}
+
+.works-content__item img {
+  width: 98.7vw;
+  height: 300px;
+}
+
+.works-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works-button a {
+  margin-top: 70px;
+}
+
+.works-button a:hover {
+  color: #13102d;
+  background-color: #09c0bb;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

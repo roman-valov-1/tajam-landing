@@ -70,6 +70,7 @@ $black-color: #413d4b;
                 font-weight: 900;
                 &:hover{
                     color: $blue-color;
+                    transition: 0.2s;
                 }
             }
         }
@@ -90,7 +91,8 @@ $black-color: #413d4b;
             &:after{
                 position: absolute;
                 content: '';
-                border: 1px solid #09c0bb;
+                border: 1px solid $blue-color;
+                color: $blue-color;
                 width: 50px;
                 top: 60px;
                 right: 215px;
@@ -152,7 +154,7 @@ $black-color: #413d4b;
 .video{
     background: url(../img/video-image.png) no-repeat 50% 50%;
     background-size: cover;
-    padding: 200px;
+    padding: 200px 0px;
     color: #fff;
     &-wrapper{
         display: flex;
@@ -329,8 +331,69 @@ $black-color: #413d4b;
             color: #f3f3f3;
             padding-bottom: 25px;
         }
-        &__button{
+        &__button a{
             @extend %blue-button;
+        }
+    }
+}
+
+.works{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
+        &__title{
+            font-family: $playfair;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            color: $black-color;
+        }
+        &__link{
+            position: relative;
+        }
+        &__link a{
+            text-decoration: none;
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 300;
+            color: $black-color;
+            letter-spacing: 0.7px;
+            &:hover{
+                color: $blue-color;
+                transition: 0.2s;
+            }
+        }
+        &__link img{
+            position: absolute;
+            top: 3px;
+            right: -15px;
+        }
+    }
+    &-content{
+        height: 300px;
+        &__item{
+        }
+        &__item img{
+            width: 98.7vw;
+            height: 300px;
+        }
+    }
+    &-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    &-button a{
+        margin-top: 70px;
+        @extend %blue-button;
+        &:hover{
+            color: #13102d;
+            background-color: $blue-color;
+            transition: 0.5s;
         }
     }
 }

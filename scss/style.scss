@@ -397,3 +397,99 @@ $black-color: #413d4b;
         }
     }
 }
+
+.comments{
+    background: url(../img/comments-bg.png) 0 0 no-repeat;
+    background-size: cover;
+    color: #fff;
+    &-wrapper{}
+}
+
+.form{
+    padding: 70px;
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__feedback{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            &-title{
+                font-size: 22px;
+                font-family: $playfair;
+                font-weight: bold;
+                color: $black-color;
+                margin-bottom: 35px;
+            }
+            &-form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 45px;
+                    padding: 0px 20px;
+                    font-size: 14px;
+                    font-family: $roboto;
+                    font-weight: 300;
+                    color: #a09ea5;
+                    outline: none;
+                    border: 1px solid #e5e5e5;
+                    margin-bottom: 25px;
+                }
+                textarea{
+                    height: 200px;
+                    resize: none;
+                    padding: 15px 20px;
+                    font-size: 14px;
+                    font-family: $roboto;
+                    font-weight: 300;
+                    color: #a09ea5;
+                    outline: none;
+                    border: 1px solid #e5e5e5;
+                    margin-bottom: 25px;
+                }
+                button{
+                    @extend %blue-button;
+                    width: 120px;
+                    background-color: #fff;
+                    &:hover{
+                        color: #13102d;
+                        background-color: $blue-color;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        &__clients{
+            width: 400px;
+            &-title{
+                font-size: 22px;
+                font-family: $playfair;
+                font-weight: bold;
+                color: $black-color;
+                margin-bottom: 35px;
+            }
+            &-content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &__column-one{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        margin-bottom: 50px;
+                    }
+                }
+                &__column-two{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

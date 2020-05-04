@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.header-promo__button, .story-wraper__description-button a, .team-footer__button a, .works-button a {
+.header-promo__button, .story-wraper__description-button a, .team-footer__button a, .works-button a, .form-wrapper__feedback-form button {
   display: inline-block;
   font-family: "Hammersmith One", sans-serif;
   font-size: 16px;
@@ -866,5 +866,153 @@ template {
   background-color: #09c0bb;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.comments {
+  background: url(../img/comments-bg.png) 0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.form {
+  padding: 70px;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-wrapper__feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+}
+
+.form-wrapper__feedback-title {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #413d4b;
+  margin-bottom: 35px;
+}
+
+.form-wrapper__feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper__feedback-form input {
+  height: 45px;
+  padding: 0px 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #a09ea5;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.form-wrapper__feedback-form textarea {
+  height: 200px;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #a09ea5;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.form-wrapper__feedback-form button {
+  width: 120px;
+  background-color: #fff;
+}
+
+.form-wrapper__feedback-form button:hover {
+  color: #13102d;
+  background-color: #09c0bb;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-wrapper__clients {
+  width: 400px;
+}
+
+.form-wrapper__clients-title {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #413d4b;
+  margin-bottom: 35px;
+}
+
+.form-wrapper__clients-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-wrapper__clients-content__column-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrapper__clients-content__column-one img {
+  margin-bottom: 50px;
+}
+
+.form-wrapper__clients-content__column-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrapper__clients-content__column-two img {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

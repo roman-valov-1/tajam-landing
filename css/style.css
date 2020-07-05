@@ -932,6 +932,12 @@ template {
   margin-bottom: 25px;
 }
 
+.form-wrapper__feedback-form input:hover {
+  border-color: #09c0bb;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
 .form-wrapper__feedback-form textarea {
   height: 200px;
   resize: none;
@@ -945,6 +951,12 @@ template {
   margin-bottom: 25px;
 }
 
+.form-wrapper__feedback-form textarea:hover {
+  border-color: #09c0bb;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
 .form-wrapper__feedback-form button {
   width: 120px;
   background-color: #fff;
@@ -955,6 +967,7 @@ template {
   background-color: #09c0bb;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .form-wrapper__clients {

@@ -435,6 +435,10 @@ $black-color: #413d4b;
                     outline: none;
                     border: 1px solid #e5e5e5;
                     margin-bottom: 25px;
+                    &:hover{
+                        border-color: $blue-color;
+                        transition: 0.5;
+                    }
                 }
                 textarea{
                     height: 200px;
@@ -447,6 +451,10 @@ $black-color: #413d4b;
                     outline: none;
                     border: 1px solid #e5e5e5;
                     margin-bottom: 25px;
+                    &:hover{
+                        border-color: $blue-color;
+                        transition: 0.5;
+                    }
                 }
                 button{
                     @extend %blue-button;
@@ -456,6 +464,7 @@ $black-color: #413d4b;
                         color: #13102d;
                         background-color: $blue-color;
                         transition: 0.5s;
+                        cursor: pointer ;
                     }
                 }
             }

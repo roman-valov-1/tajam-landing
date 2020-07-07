@@ -359,8 +359,9 @@ template {
 }
 
 .container {
-  width: 940px;
+  max-width: 970px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -872,6 +873,116 @@ template {
   background: url(../img/comments-bg.png) 0 0 no-repeat;
   background-size: cover;
   color: #fff;
+  padding: 50px;
+}
+
+.comments .comments__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__slider-big {
+  max-width: 775px;
+  margin-bottom: 30px;
+}
+
+.comments__slider-big__item {
+  text-align: center;
+  outline: none;
+  color: #fff;
+}
+
+.comments__slider-big__item-text {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.comments__slider-big__item-author {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.comments__slider-big__item-post {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  font-weight: 300;
+  color: #a09ab4;
+}
+
+.comments__slider-small {
+  position: relative;
+  padding: 0 30px;
+  max-width: 350px;
+}
+
+.comments__slider-small__item {
+  opacity: 0.4;
+  text-align: center;
+  outline: none;
+}
+
+.comments__slider-small__item.slick-center {
+  opacity: 1;
+}
+
+.comments__slider-small .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -15px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 15px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.comments__slider-small .slick-arrow:hover {
+  cursor: pointer;
+}
+
+.comments__slider-small .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/comments-arrow-left.png") 0 0/100% no-repeat;
+}
+
+.comments__slider-small .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/comments-arrow-right.png") 0 0/100% no-repeat;
+}
+
+.comments__slider-small .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.comments .slick-list {
+  overflow: hidden;
+}
+
+.comments .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form {

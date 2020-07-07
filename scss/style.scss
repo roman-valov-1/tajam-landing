@@ -31,8 +31,9 @@ $black-color: #413d4b;
 }
 
 .container {
-    width: 940px;
+    max-width: 970px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .header {
     color: #fff;
@@ -396,7 +397,89 @@ $black-color: #413d4b;
     background: url(../img/comments-bg.png) 0 0 no-repeat;
     background-size: cover;
     color: #fff;
-    &-wrapper{}
+    padding: 50px;
+    & .comments__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__slider-big{
+        max-width: 775px;
+        margin-bottom: 30px;
+        &__item{
+            text-align: center;
+            outline: none;
+            color: #fff;
+            &-text{
+                font-size: 16px;
+                font-family: $playfair;
+                line-height: 26px;
+                letter-spacing: 0.25px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            &-author{
+                font-size: 14px;
+                font-family: $roboto;
+                line-height: 22px;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+            }
+            &-post{
+                font-size: 13px;
+                font-family: $roboto;
+                line-height: 22px;
+                font-weight: 300;
+                color: #a09ab4;
+            }
+        }
+    }
+    &__slider-small{
+        position: relative;
+        padding: 0 30px;
+        max-width: 350px;
+        &__item{
+            opacity: 0.4;
+            text-align: center;
+            outline: none;
+            &.slick-center{
+                opacity: 1;
+            }
+        }
+        & .slick-arrow{
+            position: absolute;
+            top: 50%;
+            margin: -15px 0 0 0;
+            z-index: 10;
+            font-size: 0;
+            width: 15px;
+            height: 30px;
+            outline: none;
+            border: none;
+            color: #fff;
+            &:hover{
+                cursor: pointer;
+            }
+            &.slick-prev{
+                left: 0;
+                background: url('../img/comments-arrow-left.png') 0 0 / 100% no-repeat;
+            }
+            &.slick-next{
+                right: 0;
+                background: url('../img/comments-arrow-right.png') 0 0 / 100% no-repeat;
+            }
+            &.slick-disabled{
+                opacity: 0.2;
+            }
+        }
+    }
+    & .slick-list{
+        overflow: hidden;
+    }
+    & .slick-track{
+        display: flex;
+    }
 }
 
 .form{

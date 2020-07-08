@@ -7,11 +7,20 @@ $(document).ready(function(){
         draggable: true,
         swipe: true,
         centerMode: true,
-        asNavFor: ".comments__slider-big"
+        asNavFor: ".comments__slider-big",
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
     $('.comments__slider-big').slick({
         arrows: false,
         fade: true,
         asNavFor: ".comments__slider-small"
+        
     });
 });

@@ -1517,7 +1517,6 @@ template {
 
 .footer__info-contacts {
   max-width: 290px;
-  padding: 0px 10px;
 }
 
 .footer__info-contacts__title {
@@ -1815,6 +1814,12 @@ template {
   .footer__info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__info-contacts {
+    padding: 0px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

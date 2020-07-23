@@ -936,7 +936,6 @@ $screen-lg-max: 1199px;
         }
         &-contacts{
             max-width: 290px;
-            padding: 0px 10px;
             &__title{
                 font-size: 15px;
                 font-family: $roboto;
@@ -1165,6 +1164,15 @@ $screen-lg-max: 1199px;
         padding: 30px 0px;
         &__info{
             flex-wrap: wrap;
+        }
+    }
+}
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .footer{
+        &__info{
+            &-contacts{
+                padding: 0px 15px;
+            }
         }
     }
 }

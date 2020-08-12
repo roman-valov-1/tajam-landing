@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$$(window).on('load', function(){
     $('.comments__slider-small').slick({
         arrows: true,
         slidesToShow: 3,
